@@ -63,12 +63,12 @@ impl<H: Hash> MerkleTree<H> {
         MerkleTree::merkle(next)
     }
 
-    /// new a MerkleTree, but use.
+    /// new a MerkleTree, maybe not use.
     pub fn new() -> Self {
         MerkleTree(Default::default())
     }
 
-    /// Entrance, inpurt your list. and return merkle root.
+    /// Entrance, input your list. and return merkle root.
     pub fn root(hashes: Vec<H>) -> H {
         if hashes.len() == 0 {
             return Default::default();
