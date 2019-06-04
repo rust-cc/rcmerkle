@@ -1,5 +1,5 @@
 //! Merkle Tree to calculate Root.
-//! Suppert Two Way:
+//! Support Two Way:
 //! One is traditional use MerkleTree, it need send all hashed list.
 //! Two is efficient, but need to save state, like state machine. it
 //! need send new value, it will return the lastest root.
