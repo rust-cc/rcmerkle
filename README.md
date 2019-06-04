@@ -7,7 +7,7 @@
 **Suppert Two Way:**
 
 - One is traditional use MerkleTree, it need send all hashed list.
-- Two is efficient, but need to save state, like state machine. it need send new value, it will return the lastest root.
+- Two is efficient, but need to save state, like state machine. it need send new value, it will return the lastest root. Example: when you have 2^64 (18446744073709551616) data, if you want calculate it's root, you may have memory overflow. but when you use this, your state machine only need store **63** data, and only use **64** time calculate, you will get the lastest merkle root.
 
 ### Example:
 ```rust
